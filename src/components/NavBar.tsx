@@ -19,13 +19,13 @@ const NavBar: FC = function NavBar() {
           <a href="#about">About</a>
         </li>
         <li className="p-5">
-          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="p-5">
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div onClick={handleNav} className="block md:hidden mr-6 ">
+      <div onClick={handleNav} className="block md:hidden mr-6 relative ">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
@@ -37,13 +37,19 @@ const NavBar: FC = function NavBar() {
       >
         <ul className="p-8 text-2x1">
           <li className="p-2">
-            <a href="#about">About</a>
+            <a onClick={handleNav} href="#about">
+              About
+            </a>
           </li>
           <li className="p-2">
-            <a href="#work">Work</a>
+            <a onClick={handleNav} href="#projects">
+              Projects
+            </a>
           </li>
           <li className="p-2">
-            <a href="#contact">Contact</a>
+            <a onClick={handleNav} href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
       </div>

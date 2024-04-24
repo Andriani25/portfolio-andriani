@@ -1,14 +1,14 @@
 import { FC } from "react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Proyects from "./components/Proyects";
+import Projects from "./components/Projects";
 
 const App: FC = function App() {
   return (
-    <div>
+    <div className="bg-black">
       <NavBar />
       <Hero />
-      <Proyects />
+      <Projects />
     </div>
   );
 };
