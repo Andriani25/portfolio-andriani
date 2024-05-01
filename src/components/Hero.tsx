@@ -2,34 +2,47 @@ import { FC } from "react";
 import profile from "../assets/dev2.jpeg";
 import { TypeAnimation } from "react-type-animation";
 
+/*
+   <p className="text-white sm:text-lg my-6 lg:text-xl p-6">
+          My name is Andriani Leandro and i have 1 year experience in web and
+          mobile development. Working right now with {""}
+          {
+            <a
+              className="primary-color font-bold"
+              href="https://www.instagram.com/radiostucumanoficial/?hl=es-la"
+              target="blank"
+            >
+              @Radios Tucuman
+            </a>
+          }
+        </p>
+*/
+
 const Hero: FC = function () {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8">
-      <div className="my-auto mx-auto w-[300px] h-auto lg:w-[400px] ">
-        <img src={profile} alt="profile" className="rounded-full mx-4" />
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:h-[70vh] pb-8 mx-auto ">
+      <div className=" col-span-1 my-auto mx-auto w-[300px] lg:w-[400px] px-8 ">
+        <img
+          src={profile}
+          alt="profile"
+          className="rounded-full h-52 md:h-auto "
+        />
       </div>
-      <div className="col-span-2 px-5">
-        <h1 className="text-white text-4x1 sm:text-5xl lg:text-8xl font-extrabold">
-          <span className="primary-color">I'm a</span>
+
+      <div className="col-span-2 px-5 my-auto ">
+        <h1 className="text-white text-6xl sm:text-5xl lg:text-8xl font-extrabold">
+          <span>I'm a</span>
           <br />
           <TypeAnimation
-            sequence={[
-              "Mobile Developer",
-              1000,
-              "Frontend Developer",
-              1000,
-              "Apprentice in Backend",
-              1000,
-            ]}
+            className="primary-color"
+            sequence={["Mobile", 1500, "Frontend", 1500, "Backend", 1500]}
             wrapper="span"
-            speed={50}
+            speed={25}
             repeat={Infinity}
           />
+          <br />
+          <span>Developer</span>
         </h1>
-        <p>
-          My name is Andriani Leandro and i have 1 year experience in web and
-          mobile development.
-        </p>
       </div>
     </div>
   );

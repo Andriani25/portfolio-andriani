@@ -1,6 +1,5 @@
 import { FC, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import logo from "../assets/dev.png";
 
 const NavBar: FC = function NavBar() {
   const [nav, setNav] = useState<boolean>(false);
@@ -12,9 +11,9 @@ const NavBar: FC = function NavBar() {
   };
 
   return (
-    <div className="bg-black  text-gray-400  h-[100px] max-w-[1200px] mx-auto flex justify-between items-center ">
-      <img src={logo} alt="jaj" className="h-20 w-20 ml-4 rounded-full" />
-      <ul className="hidden md:flex">
+    <div className="text-white h-[100px] w-auto flex mr-5 justify-between items-center z-50 sticky top-0 ">
+      <br></br>
+      <ul className="hidden md:flex rounded-3xl bg-gradient-to-r from-red-600 to-green-600 font-bold ">
         <li className="p-5">
           <a href="#about">About</a>
         </li>
@@ -25,14 +24,17 @@ const NavBar: FC = function NavBar() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div onClick={handleNav} className="block md:hidden mr-6 relative ">
+      <div
+        onClick={handleNav}
+        className="block md:hidden relative bg-[#202121] p-2 rounded-xl"
+      >
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
         className={
           nav
-            ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500 "
-            : "fixed left-[-100%] h-full top-0 w-[60%] bg-[#202121] duration-500 "
+            ? "fixed h-52 left-0 top-0 right-0 bottom-0 z-auto w-[60%] bg-[#202121] rounded-sm ease-in-out duration-500 "
+            : "fixed left-[-100%] h-52 top-0 right-0 bottom-0 z-10 w-[60%] bg-[#202121] rounded-sm duration-500 "
         }
       >
         <ul className="p-8 text-2x1">
