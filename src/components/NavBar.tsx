@@ -13,7 +13,7 @@ const NavBar: FC = function NavBar() {
   return (
     <div className="text-white h-[100px] w-auto flex mr-5 justify-between items-center z-50 sticky top-0 ">
       <br></br>
-      <ul className="hidden md:flex rounded-3xl bg-gradient-to-r from-red-600 to-green-600 font-bold ">
+      <ul className="hidden md:flex rounded-3xl bg-gray-800 font-bold  ">
         <li className="p-5">
           <a href="#about">About</a>
         </li>

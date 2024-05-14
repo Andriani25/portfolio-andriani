@@ -9,3 +9,15 @@ declare module '*.png' {
      //@ts-expect-error
     export = value;
   }
+
+  declare module '*.webp' {
+    const value: string;
+     //@ts-expect-error
+    export = value;
+  }
+  
+  declare module '*.jpg' {
+    const value: string;
+     //@ts-expect-error
+    export = value;
+  }
