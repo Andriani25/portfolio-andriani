@@ -12,11 +12,11 @@ const About: FC = function () {
             </h2>
             <p className="text-base lg:text-lg">
               {" "}
-              My name is Andriani Leandro from Argentina. I moved recently to
-              Spain looking for new opportunities in my life. Actually searching
-              for a full-time job (remote preferably) with mobile development. I
-              have professional experience with maintanence and update of the
-              main page of{" "}
+              My name is Andriani Leandro from Argentina. I recently moved to
+              Spain looking for new opportunities in my life. I am currently
+              searching for a full-time job (preferably remote) in mobile
+              development. I have professional experience with maintenance and
+              updates of the main page of{" "}
               {
                 <a
                   className="secondary-color"
@@ -26,8 +26,8 @@ const About: FC = function () {
                   Universidad de San Pablo Tucumán
                 </a>
               }{" "}
-              and his database, all with JS.Now im focused in mobile dev and
-              studiyng with Kotlin for native apps!
+              and its database, all with JS. Now I'm focused on mobile
+              development and studying Kotlin for native apps!
             </p>
           </div>
         </div>
